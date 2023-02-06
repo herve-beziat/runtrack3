@@ -1,0 +1,54 @@
+/* Créez un fichier index.html contenant les balises de
+structure html de base (<doctype>, <html>, <head>,
+<body>).
+Créez un fichier style.css qui contiendra le style de
+cette page.
+Dans votre body, créez 4 <sections> ayant comme
+classe “section”.
+Mettez la couleur #88c1d0 en background de vos
+sections.
+Ajoutez des medias queries de sorte à respecter le
+schéma ci-contre: */
+
+
+/* #container {display: flex;
+            gap: 1%}
+
+.section {background-color: #88c1d0;
+        width: 445px;
+        height: 280px;
+} */
+        
+
+
+@media screen 
+    and (min-width: 1600px){
+.section{background-color: #88c1d0;
+        width: 445px;
+        height: 280px}
+#container {display: flex;
+            gap: 1%;}
+    }
+
+@media screen 
+    and (min-width: 768px)
+    and (max-width: 1599px) {
+#container {display: flex;
+            flex-wrap: wrap;
+            gap: 1%;}
+.section {background-color: #88c1d0;
+        height: 150px;
+        width: 40%;
+        margin: 1%;}
+    }
+
+@media screen 
+    and (max-width: 767px) {
+.section{background-color: #88c1d0;
+        height: 150px;
+        width: 40%;
+        margin: 1%;}
+#container{display: flex;
+        flex-direction: column;
+        gap: 1%;}
+    }
